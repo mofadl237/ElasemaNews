@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Global Style */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0rem .8rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+}
+
+.flex-st {
+    justify-content: flex-start;
+    gap:.8rem;
+}
+
+.btn {
+    background-color: #CF112D;
+    color: white;
+    padding: .4rem .6rem;
+    border-radius: .1rem;
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    -ms-border-radius: .1rem;
+    -o-border-radius: .1rem;
+}
+
+/*Header*/
+.social .grid {
+    display: grid;
+    grid-template-columns: repeat(14, auto);
+    color: white;
+    grid-template-areas: "four four one two three seven seven seven seven seven seven seven seven seven ";
+    text-align: center;
+
+}
+
+.social .grid .four {
+    grid-area: four;
+}
+
+.social .grid .one1 {
+    grid-area: one;
+}
+
+.social .grid .one2 {
+    grid-area: two;
+}
+
+.social .grid .one3 {
+    grid-area: three;
+}
+
+.social .grid .seven {
+    grid-area: seven;
+}
+
+.social .grid .seven ul {
+    display: flex;
+    justify-content: center;
+}
+
+header .social,
+header nav {
+    background-color: #000;
+    color: white;
+}
+
+header nav .flex,
+.social .grid {
+    background-color: #2e2d2d;
+}
+
+header nav .flex a,
+.social .grid a {
+    padding: .9rem .5rem;
+    display: block;
+    font-size: 1.2rem;
+}
+
+header nav ul li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header nav ul li:hover,
+header nav ul .link1,
+.social .grid .four,
+.social .grid ul li:hover {
+    background-color: #CF112D;
+}
+
+header .imageSection {
+    gap: 1.5rem;
+}
+
+header .imageSection .image {
+    flex-basis: 30%;
+}
+
+header .imageSection .manager h2 {
+    color: #706d6d;
+    padding: .8rem 0;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+
+header .imageSection .manager h3 {
+    font-weight: bolder;
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+}
+
+/*LastNewes*/
+.LastNewes {
+    margin: 2rem 0;
+}
+
+.LastNewes .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "two  one";
+    gap: 2rem;
+}
+
+.LastNewes .grid .child-1 {
+    grid-area: "two";
+    background-color: #000;
+    padding: .5rem 1rem;
+}
+
+.LastNewes .grid .child-2 {
+    grid-area: "one";
+    border: 1px solid red;
+}
+
+.LastNewes .grid .child-1 .head h4 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.LastNewes .grid .child-1 .head h4:hover {
+    cursor: pointer;
+    color: #CF112D
+}
+
+.LastNewes .grid .child-1 p.line {
+    margin: 1rem 0 2rem;
+    height: .1rem;
+    background-color: #706d6d;
+}
+.LastNewes .grid .child-1 .body .div1 .image{
+    flex-basis: 40%;
+}
+.LastNewes .grid .child-1 .body .div1 .text.flex{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.LastNewes .grid .child-1 .body .div1 .text a{
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 3.5rem;
+}
+.LastNewes .grid .child-1 .body .div2{
+    align-items: flex-start;
+    /* border:1px solid #706d6d; */
+    padding:1rem .5rem;
+}
+.LastNewes .grid .child-1 .body .div2 .flex{
+    align-items: flex-start;
+}
+.LastNewes .grid .child-1 .body .div2 .image {
+    flex-basis: 40%;
+    border:1px solid #FFF;
+}
+.LastNewes .grid .child-1 .body .div2 .flex  .flex{
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
